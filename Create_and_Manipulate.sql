@@ -1,40 +1,45 @@
-# Question 1 
+# 1. Find all the sailors with a rating above 7.
+
 use db;
 select * from db.sailor where rating>7;
 
-#Question 2
+# 2. Display all the names and colors of the boats.
+  
 select bname, color from db.boats;
 
-#Question 3
+# 3. Find all the boats with red color.
+  
 select * from db.boats where color = "red";
 
-#Question 4
+# 4. Find the names of sailors who have reserved boat number 1, 2, 3.
+  
 use db;
 select sailor.sname, reserves.bid from sailor
 left join reserves 
 on sailor.sid = reserves.sid 
 where reserves.bid in (1,2,3);
 
-#Question 5
+# 5. Find SIDs of the sailors who have reserved red boat.
+  
 use db;
 select reserves.sid, reserves.bid , boats.color from boats
 left join reserves
 on boats.bid = reserves.bid
 where boats.color = "red";
 
-#Question 6
+# 6. Find the color of the boats reserved by ‘lakshman’.
 use db;
 select sailor.sname, boats.color from sailor 
 join reserves on sailor.sid = reserves.sid
 join boats on boats.bid = reserves.bid
 where sailor.sname = "Lakshman";
 
-#Question 7
+# 7. Find names of the sailors who have reserved at least one boat.
 use db;
 select sailor.sname, reserves.bid 
 from sailor join reserves on sailor.sid = reserves.sid;
 
-#Question 8
+# 8. Find the names of sailors who have reserved a red or a green boat.
 use db;
 select sailor.sname, boats.color
 from sailor
