@@ -8,7 +8,7 @@ for each row
 set NEW.first_name = upper(NEW.first_name);
 
 use db;
-insert into db.student values("dbms","CS21B1066",78);
+insert into db.student values("dbms","CSBHAYDHJA",78);
 
 # 2.  Trigger to restrict Deleting – 
 	
@@ -46,4 +46,4 @@ end;
 DELIMITER ;
 
 use db;
-insert into student values("Another_dummy","cs21b1065",61);
+insert into student values("Another_dummy","USGQHYSNHA",61);
