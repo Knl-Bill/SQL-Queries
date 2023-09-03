@@ -16,7 +16,7 @@
 
 ## Tables
 
-###Table Structure 
+**Table Structure**
 
 Sailor-
 1.     SID             -int(11), Not NULL, Primary Key
@@ -34,7 +34,7 @@ Reserves-
 2.     BID             -int(11), Not NULL, Primary Key
 3.     Date            -date
 
-###Table Creation:
+**Table Creation:**
 
 Sailor       -        Create table Sailor (SID int(11) primary key , SNAME varchar(20), RATING int, AGE int(3));
 
@@ -47,9 +47,12 @@ Reserves     -        Create table Reserves (SID int(11) primary key, BID int(11
 "The queries included in this project are written in SQL, and it's beneficial to have a foundational knowledge of SQL Query language. This includes understanding how SQL queries function, familiarity with essential commands, and basic concepts."
 
 
-Some of the resources from where you can learn about MySQL are :
+**Some of the resources from where you can learn about MySQL are :**
+
 MySQL Reference Manual : `https://dev.mysql.com/doc/refman/8.0/en/tutorial.html`
+
 W3Schools : `https://www.w3schools.com/MySQL/default.asp`
+
 Javatpoint : `https://www.javatpoint.com/mysql-tutorial`
 
 ## Installation
