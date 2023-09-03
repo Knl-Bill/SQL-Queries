@@ -1,4 +1,5 @@
-#1 
+# 1. Trigger to convert a field lowercase to uppercase - executes BEFORE INSERT.
+ 
 use db;
 create trigger capitalize
 before insert
@@ -9,7 +10,8 @@ set NEW.first_name = upper(NEW.first_name);
 use db;
 insert into db.student values("dbms","CS21B1066",78);
 
-#2
+# 2.  Trigger to restrict Deleting – 
+	
 use db;
 DELIMITER //
 CREATE TRIGGER del
@@ -27,7 +29,8 @@ DELIMITER ;
 use db;
 delete from student where sr = 10;
 
-#3
+# 3. Program to indicate invalid value condition using trigger . 
+	
 DELIMITER //
 create trigger invalid
 before insert
