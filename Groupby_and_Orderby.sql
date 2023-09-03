@@ -1,4 +1,4 @@
-#LAB4
+LAB4
 #1
 use db;
 select sailor.sname from sailor where sailor.age > (select sailor.age from sailor where sailor.rating in (10) 
