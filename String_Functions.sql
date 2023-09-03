@@ -1,9 +1,9 @@
-#LAB5
-#1
+# 1. Concat bid & bname of Boats & display along with color.
+  
 use db;
 select CONCAT(bid , " " , bname) as address, color from boats;
 
-#2
+# 2. Returns characters from the left of CHAR by deleting all leftmost characters that appear in set. Display all sailors information by removing characters of sname if starts with _R‘
 select sid, concat(replace(substr(sname,1,1),"R",""), substr(sname,2,length(sname))) as sname from sailor;
 #3
 select bid, LOWER(bname) as bname, color from boats; 
